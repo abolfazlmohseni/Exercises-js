@@ -5,47 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>drag and drop</title>
-
-    <style>
-        .dropzone {
-            min-height: 150px;
-            border: 2px dashed #aaa;
-            margin-bottom: 20px;
-            padding: 10px;
-            transition: background-color 0.2s;
-        }
-
-        .item {
-            background-color: lightblue;
-            padding: 10px 20px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            cursor: grab;
-            border: 1px solid #555;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 
 
 </head>
 
 <body>
-<div class="dropzone" id="source">
-  <div class="item" draggable="true" id="item-1" data-type="apple">🍎 آیتم ۱</div>
-  <div class="item" draggable="true" id="item-2" data-type="apple">🍎 آیتم ۱</div>
-  <div class="item" draggable="true" id="item-3" data-type="apple">🍎 آیتم ۱</div>
-  <div class="item" draggable="true" id="item-4" data-type="banana">🍌 آیتم ۲</div>
-  <div class="item" draggable="true" id="item-5" data-type="banana">🍌 آیتم ۲</div>
-  <div class="item" draggable="true" id="item-6" data-type="banana">🍌 آیتم ۲</div>
-  <div class="item" draggable="true" id="item-7" data-type="grape">🍇 آیتم ۳</div>
-  <div class="item" draggable="true" id="item-8" data-type="grape">🍇 آیتم ۳</div>
-  <div class="item" draggable="true" id="item-9" data-type="grape">🍇 آیتم ۳</div>
-</div>
+    <div class="dropzone item-con" id="source">
+        <div class="item" draggable="true" id="item-1" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-2" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-3" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-4" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-5" data-type="four">کالا چهار</div>
+        <div class="item" draggable="true" id="item-6" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-7" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-8" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-9" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-10" data-type="four">کالا چهار</div>
+        <div class="item" draggable="true" id="item-11" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-12" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-13" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-14" data-type="five">کالا پنج</div>
+        <div class="item" draggable="true" id="item-15" data-type="five">کالا پنج</div>
+        <div class="item" draggable="true" id="item-16" data-type="five">کالا پنج</div>
+        <div class="item" draggable="true" id="item-17" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-18" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-19" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-20" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-21" data-type="four">کالا چهار</div>
+        <div class="item" draggable="true" id="item-22" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-23" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-24" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-25" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-26" data-type="four">کالا چهار</div>
+        <div class="item" draggable="true" id="item-27" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-28" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-29" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-30" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-31" data-type="four">کالا چهار</div>
+        <div class="item" draggable="true" id="item-32" data-type="one">کالا یک</div>
+        <div class="item" draggable="true" id="item-33" data-type="two">کالا دو</div>
+        <div class="item" draggable="true" id="item-34" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-35" data-type="tree">کالا سه</div>
+        <div class="item" draggable="true" id="item-36" data-type="four">کالا چهار</div>
+        <div class="item" draggable="true" id="item-37" data-type="one">کالا یک</div>
 
-<h3>ستون A</h3>
-<div class="dropzone" id="zone-a"></div>
+    </div>
 
-<h3>ستون B</h3>
-<div class="dropzone" id="zone-b"></div>
+    <div class="conteyner">
+        <h3>شنبه</h3>
+        <div class="dropzone" id="zone-0"></div>
+        <h3>یکشنبه</h3>
+        <div class="dropzone" id="zone-1"></div>
+        <h3>دوشنبه</h3>
+        <div class="dropzone" id="zone-2"></div>
+        <h3>سه شنبه</h3>
+        <div class="dropzone" id="zone-3"></div>
+        <h3>چهارشنبه</h3>
+        <div class="dropzone" id="zone-4"></div>
+        <h3>پنجشنبه</h3>
+        <div class="dropzone" id="zone-5"></div>
+        <h3>جمعه</h3>
+        <div class="dropzone" id="zone-6"></div>
+    </div>
+
 
     <script src="./app.js"></script>
 </body>

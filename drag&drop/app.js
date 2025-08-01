@@ -1,10 +1,18 @@
 let previousContainer = null;
 
-const numbers = {
-    apple: 1,
-    banana: 3,
-    grape: 2
+
+
+let numbers = {
+    one: 1,
+     two: 2, 
+     tree: 1, 
+     four: 1,
+      five: 1
 }
+
+
+
+
 
 function applyDragEvents(item) {
     item.addEventListener('dragstart', (e) => {
