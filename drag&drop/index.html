@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drag and drop</title>
+
+    <style>
+        .dropzone {
+            min-height: 150px;
+            border: 2px dashed #aaa;
+            margin-bottom: 20px;
+            padding: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: grab;
+            border: 1px solid #555;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<div class="dropzone" id="source">
+  <div class="item" draggable="true" id="item-1" data-type="apple">🍎 آیتم ۱</div>
+  <div class="item" draggable="true" id="item-2" data-type="apple">🍎 آیتم ۱</div>
+  <div class="item" draggable="true" id="item-3" data-type="apple">🍎 آیتم ۱</div>
+  <div class="item" draggable="true" id="item-4" data-type="banana">🍌 آیتم ۲</div>
+  <div class="item" draggable="true" id="item-5" data-type="banana">🍌 آیتم ۲</div>
+  <div class="item" draggable="true" id="item-6" data-type="banana">🍌 آیتم ۲</div>
+  <div class="item" draggable="true" id="item-7" data-type="grape">🍇 آیتم ۳</div>
+  <div class="item" draggable="true" id="item-8" data-type="grape">🍇 آیتم ۳</div>
+  <div class="item" draggable="true" id="item-9" data-type="grape">🍇 آیتم ۳</div>
+</div>
+
+<h3>ستون A</h3>
+<div class="dropzone" id="zone-a"></div>
+
+<h3>ستون B</h3>
+<div class="dropzone" id="zone-b"></div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
